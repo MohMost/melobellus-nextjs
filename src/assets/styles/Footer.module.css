@@ -1,0 +1,155 @@
+.footer {
+  background-image: #110320;
+  background-size: 1rem 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 20rem;
+}
+.arrow_container:hover rect:nth-of-type(1) {
+  fill: #552389;
+}
+.arrow_container {
+  cursor: pointer;
+}
+.ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 20%;
+}
+.li {
+  transition: all 0.1s ease-in-out;
+  padding: 10%;
+}
+
+.li:hover {
+  transform: scale(1.2);
+}
+.container {
+  background: #110320;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  padding-bottom: 1rem;
+}
+.row1 {
+  color: #9dff8d;
+  position: relative;
+
+  font-weight: 600;
+  font-size: 2rem;
+}
+.row2 {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  width: 90%;
+  height: 100%;
+  margin-bottom: 1.5rem;
+}
+.contacts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 30%;
+}
+.phone_mail_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.phone_mail {
+  color: #e7f1e5;
+  text-decoration: none;
+  margin-left: 1rem;
+}
+
+.row3 {
+  color: #e7f1e5;
+
+  position: relative;
+}
+.row3 a {
+  color: #9dff8d;
+}
+.phone_mail_container:hover .phone_mail,
+.row3 a:hover {
+  color: #9dff8d;
+  text-decoration: underline;
+}
+@media screen and (max-width: 1040px) {
+  .li {
+    width: 3rem;
+  }
+}
+@media screen and (max-width: 655px) {
+  .row1 {
+    font-size: 1.5rem;
+  }
+  .contacts {
+    flex-wrap: nowrap;
+    margin-top: 1rem;
+    flex-direction: row;
+    width: 90%;
+  }
+  .ul {
+    width: 50%;
+  }
+  .row2 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .phone_mail {
+    font-size: 0.8rem;
+  }
+  .li {
+    width: 3rem;
+  }
+  .row3 {
+    font-size: 0.6rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  .phone_mail {
+    font-size: 0.7rem;
+  }
+}
+@media screen and (max-width: 420px) {
+  .contacts {
+    flex-direction: column;
+    width: 50%;
+  }
+  .phone_mail_container {
+    width: 80%;
+    margin-bottom: 1.5rem;
+  }
+}
+@media screen and (max-width: 380px) {
+  .phone_mail_container {
+    width: 90%;
+    margin-bottom: 1.5rem;
+  }
+}
+@media screen and (max-width: 340px) {
+  .phone_mail_container {
+    width: 100%;
+    margin-bottom: 0.7rem;
+  }
+  .phone_mail {
+    font-size: 70%;
+  }
+  .row3 {
+    font-size: 0.5rem;
+  }
+}
+@media screen and (min-width: 1950px) {
+  .footer svg {
+    height: 100rem;
+  }
+}

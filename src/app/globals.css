@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+@font-face {
+  font-family: "BlueberryDays";
+  src: url("/BlueberryDays.ttf") format("truetype"),
+    url("/BlueberryDays.woff") format("woff"),
+    url("/BlueberryDays.eot") format("eot");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  background: #21073c;
+  font-family: "Poppins";
+  width: 100%;
+  height: auto;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.no-scroll {
+  overflow: hidden;
+}
+main {
+  margin: 0 10%;
+}

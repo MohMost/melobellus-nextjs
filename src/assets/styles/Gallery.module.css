@@ -1,0 +1,80 @@
+.art {
+  cursor: pointer;
+  border-radius: 0.5rem;
+  object-fit: cover;
+  height: inherit;
+  transition: 0.5s ease;
+}
+.image_container {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 0.5rem;
+}
+
+.image_container:hover .art {
+  transform: scale(1.2);
+}
+
+.my_masonry_grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  width: auto;
+}
+.my_masonry_grid_column {
+  padding: 15px;
+  background-clip: padding-box;
+}
+
+.my_masonry_grid_column > div {
+  margin-bottom: 30px;
+}
+
+.gallery {
+  background-color: #110320;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  border: #deffeb solid 2px;
+}
+.title {
+  color: #9dff8d;
+  font-family: "Inter";
+  font-weight: bold;
+  text-align: center;
+  margin: 1rem;
+  font-size: 2rem;
+}
+.title_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.title_container img {
+  width: 2rem;
+}
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transition: ease all 1s;
+  transform: translateX(-50%);
+}
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+@media screen and (max-width: 500px) {
+  .title {
+    margin: 1rem;
+    font-size: 1.5rem;
+  }
+}

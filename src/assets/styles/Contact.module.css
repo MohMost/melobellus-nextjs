@@ -1,0 +1,135 @@
+.title {
+  color: #9dff8d;
+  font-family: "Inter";
+  font-weight: bold;
+  text-align: center;
+  margin: 1.5rem;
+  font-size: 2rem;
+}
+.title_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.title_container img {
+  width: 2rem;
+}
+.button_container {
+  width: 10rem;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact {
+  height: 100%;
+  width: 100%;
+  padding: 2rem;
+}
+#name {
+  background-color: #deffeb;
+  font-weight: 600;
+  color: black;
+  border: none;
+  border-radius: 1rem;
+  margin: 0.5rem;
+  padding: 0.8rem;
+  width: 20rem;
+  font-family: "inter";
+}
+#phone {
+  color: black;
+  background-color: #deffeb;
+  border: none;
+  border-radius: 1rem;
+  margin: 0.5rem;
+  padding: 0.8rem;
+  width: 20rem;
+  font-weight: 600;
+  font-family: "inter";
+}
+#message {
+  color: black;
+  background-color: #deffeb;
+  font-family: "inter";
+  border: none;
+  border-radius: 1rem;
+  margin: 0.5rem;
+  padding: 0.8rem;
+  width: 20rem;
+  font-weight: 600;
+}
+.oops {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  width: 25rem;
+}
+.oops h1 {
+  color: #f24e1e;
+}
+.oops img {
+  height: 40px;
+  width: 40px;
+}
+.oops p {
+  color: #deffeb;
+  text-align: center;
+}
+.oops p a {
+  color: #9dff8d;
+}
+.oops p a:hover {
+  text-decoration: underline;
+}
+.thank_you {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  width: 25rem;
+}
+.thank_you img {
+  height: 40px;
+  width: 40px;
+}
+.thank_you p {
+  color: #deffeb;
+  text-align: center;
+}
+@media screen and (max-width: 430px) {
+  #name {
+    width: 15rem;
+    padding: 0.6rem;
+  }
+  #phone {
+    width: 15rem;
+    padding: 0.6rem;
+  }
+  #message {
+    width: 15rem;
+    padding: 0.6rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .title {
+    font-size: 1.5rem;
+  }
+}
+.alert {
+  color: #deffeb;
+
+  top: 0;
+  left: 0;
+}

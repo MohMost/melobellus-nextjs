@@ -1,0 +1,19 @@
+.btn {
+  display: inline-block;
+  position: relative;
+  padding: 0.5% 20%;
+  border-radius: 30em 5em 30em 5em;
+  font-size: 1.3rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  border: none;
+  color: #deffeb;
+  background-color: rgba(217, 169, 255, 0.7);
+  cursor: pointer;
+  height: 3rem;
+}
+
+.btn:hover {
+  background: #d9a9ff;
+  color: #f1f5f0;
+}

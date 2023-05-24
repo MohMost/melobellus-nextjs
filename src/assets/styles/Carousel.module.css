@@ -1,0 +1,13 @@
+.image {
+  height: 90%;
+  width: auto;
+  object-fit: cover;
+}
+.carousel {
+  height: 90vh;
+  width: 90vw;
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
