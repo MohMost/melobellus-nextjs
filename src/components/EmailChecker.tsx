@@ -12,7 +12,7 @@ export default function EmailChecker({
     if (upState) {
       return (
         <div className={classes.thank_you}>
-          <img src="../assets/icons/check.svg" />
+          <img src="/icons/check.svg" />
           <h1 className={classes.title}>Thank you !</h1>
           <p>
             your message was successfully sent, i will reply to your email as
@@ -23,7 +23,7 @@ export default function EmailChecker({
     } else if (error) {
       return (
         <div className={classes.oops}>
-          <img src="../assets/icons/error.svg" />
+          <img src="/icons/error.svg" />
           <h1 className={classes.title}>OOPS !</h1>
           <p>
             it seem there was an error if you couldn&apos;t send the message
@@ -38,7 +38,7 @@ export default function EmailChecker({
         </div>
       );
     } else {
-      return <img src="../assets/icons/loading.svg" />;
+      return <img src="/icons/loading.svg" />;
     }
   } else {
     return <></>;
