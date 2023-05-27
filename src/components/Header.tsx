@@ -81,10 +81,13 @@ export default function Header() {
             <Button event={showModalHandler} text="Hire Me" />
           </section>
         </div>
-        <img
+        <Image
           className={classes.banner_illustration}
           src="/images/banner_illustration.png"
           alt="banner illustration"
+          style={{ width: "30rem", height: "auto" }}
+          width={300}
+          height={300}
         />
       </div>
       <div className={classes.svg_container}>

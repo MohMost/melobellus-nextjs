@@ -4,6 +4,7 @@ import classes from "../assets/styles/Contact.module.css";
 import Button from "./Button";
 import sendEmail from "../utils/emailSender";
 import EmailChecker from "./EmailChecker";
+import Image from "next/image";
 export default function Contact() {
   const form = useRef<HTMLFormElement>(null);
   const [popUpState, setPopUpState] = useState(false);
@@ -27,9 +28,9 @@ export default function Contact() {
         onSubmit={(e) => sendEmail([e, form, setPopUpState, setErrorIsVisible])}
       >
         <div className={classes.title_container}>
-          <img src="/icons/star.svg" alt="" />
+          <Image src="/icons/star.svg" alt="star icon" width={40} height={37} />
           <h2 className={classes.title}>Contact Me</h2>
-          <img src="/icons/star.svg" alt="" />
+          <Image src="/icons/star.svg" alt="star icon" width={40} height={37} />
         </div>
 
         <input

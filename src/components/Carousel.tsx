@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import classes from "../assets/styles/Carousel.module.css";
-
+import Image from "next/image";
 interface CarouselProps {
   currentNum: number;
 }
@@ -14,11 +14,14 @@ function Carousel({ currentNum }: CarouselProps) {
 
   return (
     <div className={classes.carousel}>
-      <img
+      <Image
         className={classes.image}
         src={currentImage}
         alt=""
         onClick={(e) => e.stopPropagation()}
+        style={{ height: "90%", width: "auto" }}
+        width={400}
+        height={400}
       />
     </div>
   );

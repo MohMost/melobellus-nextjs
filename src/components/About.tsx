@@ -5,12 +5,19 @@ import Image from "next/image";
 export default function About() {
   return (
     <div id="about" className={classes.about}>
-      <img className={classes.image} src="/images/melobellus.png" alt="" />
+      <Image
+        className={classes.image}
+        src="/images/melobellus.png"
+        alt="illustration"
+        style={{ width: "auto", height: "auto" }}
+        width={400}
+        height={400}
+      />
       <div>
         <div className={classes.title_container}>
-          <img src="../assets/icons/star.svg" alt="" />
+          <Image src="/icons/star.svg" alt="star icon" width={40} height={37} />
           <h2 className={classes.title}>About us</h2>
-          <img src="../assets/icons/star.svg" alt="" />
+          <Image src="/icons/star.svg" alt="star icon" width={40} height={37} />
         </div>
         <div className={classes.content_container}>
           <p className={classes.content}>

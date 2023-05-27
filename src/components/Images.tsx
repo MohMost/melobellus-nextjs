@@ -3,7 +3,7 @@ import getImages from "../utils/fetchData";
 import classes from "../assets/styles/Gallery.module.css";
 import Masonry from "react-masonry-css";
 const resource = getImages("gallery/illustration/");
-
+import Image from "next/image";
 const Images = (props: any): JSX.Element => {
   const imageList: string[] = (resource as { read: () => string[] }).read();
   const breakpointColumnsObj = {
@@ -22,13 +22,15 @@ const Images = (props: any): JSX.Element => {
         {imageList.map((url: string) => {
           return (
             <div className={classes.image_container} key={url}>
-              <img
+              <Image
                 onClick={props.clickEvent}
                 className={classes.art}
-                width="100%"
+                style={{ width: "100%", height: "auto" }}
                 src={url}
                 alt={`${imageList.indexOf(url)}`}
                 loading="lazy"
+                width={400}
+                height={400}
               />
             </div>
           );
