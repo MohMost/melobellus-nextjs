@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useState, useRef } from "react";
 import classes from "../assets/styles/Contact.module.css";
+import emailjs from "@emailjs/browser";
 
-import Image from "next/image";
 export default function EmailChecker({
   upState,
   toggled,
@@ -12,12 +12,7 @@ export default function EmailChecker({
     if (upState) {
       return (
         <div className={classes.thank_you}>
-          <Image
-            src="/icons/check.svg"
-            width={40}
-            height={40}
-            alt="success icon"
-          />
+          <img src="/icons/check.svg" />
           <h1 className={classes.title}>Thank you !</h1>
           <p>
             your message was successfully sent, i will reply to your email as
@@ -28,12 +23,7 @@ export default function EmailChecker({
     } else if (error) {
       return (
         <div className={classes.oops}>
-          <Image
-            src="/icons/error.svg"
-            width={40}
-            height={40}
-            alt="error icon"
-          />
+          <img src="/icons/error.svg" />
           <h1 className={classes.title}>OOPS !</h1>
           <p>
             it seem there was an error if you couldn&apos;t send the message
@@ -48,14 +38,7 @@ export default function EmailChecker({
         </div>
       );
     } else {
-      return (
-        <Image
-          src="/icons/loading.svg"
-          width={40}
-          height={40}
-          alt="loading icon"
-        />
-      );
+      return <img src="/icons/loading.svg" />;
     }
   } else {
     return <></>;
