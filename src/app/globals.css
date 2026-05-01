@@ -8,7 +8,8 @@
 }
 @font-face {
   font-family: "BlueberryDays";
-  src: url("/BlueberryDays.ttf") format("truetype"),
+  src:
+    url("/BlueberryDays.ttf") format("truetype"),
     url("/BlueberryDays.woff") format("woff"),
     url("/BlueberryDays.eot") format("eot");
   font-weight: normal;
